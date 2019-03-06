@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doom Fire</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			border: 1px solid #000;
+		}
+		td {
+			border: 1px solid #000;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			vertical-align: middle;
+			position: relative;
+		}
+		td.pixel {
+			width: 4px;
+			height: 4px;
+			border: none;
+		}
+		.pixel-index {
+			position: absolute;
+			display: inline-block;
+			font-size: 10px;
+			top: 1px;
+			right: 1px;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div id="fireCanvas"></div>
+	<button onclick="changeWindDirection()">Change Wind!</button>
+	<button onclick="toggleDebug()">Debug</button>
+
+</body>
+<script type="text/javascript" src="fire.js"></script>
+</html>
